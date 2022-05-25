@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
@@ -30,18 +31,51 @@
     <main>
 
         <section>
-    
-            <div class="section__div__color">
-    
-                <p>Preparamos el sushi con los estandares de la mas alta calidad, asi es nuestro trabajo y por eso te presentamos para que degustes un sushi tan delicioso!</p>
-    
-            </div>
+
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item bg-dark text-warning">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      ¿Por que nosotros?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Nuestro desempeño y compromiso por hacer el mejor sushi premiados por Paris en 2021/2022
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-warning">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Calidad
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Disponemos de la mejor calidad y los productos mas frescos del mercado
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item bg-dark text-warning">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Sobre nuestros Sushiman!
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Disponemos de los mejores sushiman actualmente conocidos en el mundo
+                    </div>
+                  </div>
+                </div>
+              </div>
 
             <div section__imgcentrales>
 
                 <img src="../assets/images/nosotros1.jpg" alt="" class="section__imgcentrales__img">
                 <img src="../assets/images/nosotros2.jpg" alt="" class="section__imgcentrales__img">
-                <img src="../assets/images/nosotros3.jpg" alt="" class="section__imgcentrales__img">
+                <img src="../assets/images/nosotros3.png" alt="" class="section__imgcentrales__img">
 
             </div>
     
@@ -54,6 +88,8 @@
             Todos los derechos reservados por El Rey del Sushi
     
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     
     
 </body>
