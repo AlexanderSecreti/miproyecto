@@ -8,13 +8,25 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    }
+    background-image: url(../assets/images/portada.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+nav a{
+      color: white;
+}
+
+nav a:hover{
+  color:red
+}
 
 .header__imgRedonda {
-        width:22rem;
+        width:20rem;
         height:16rem;
         border-radius: 50%;
         padding: 1rem;
+        color: rgb(236, 51, 51) !important;
     }
 
 .header__nav__derecha{
@@ -28,18 +40,6 @@
     font-size: 1.5rem
 }
 
-a{
-    color: rgb(236, 51, 51);
-  }
-  
-  a:hover{
-    color: white;
-  }
-  
-  a:active{
-    color: orange;
-  }
-
   main{
     background-color: black
     }
@@ -47,7 +47,7 @@ a{
 .section__div__color{
     font-size: 1.5rem;
     font-family: cursive;
-    color: red
+    color: white
 }
 
 .section__imgcentrales{
@@ -62,15 +62,13 @@ a{
     font-size: 1rem
 }
 
-header{
-    background-image: url(../assets/images/portada.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-}
-
-.footer{
+.copyright{
     font-family: cursive;
     background-color: rgb(212, 94, 100);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
   
   @media (max-width: 768px) {

@@ -1,23 +1,37 @@
 $colorancla: rgb(236, 51, 51);
 $pixels: 20px;
-
 @import "_general";
-
-* {
+@mixin color{
+	background-color: black	
+}
+@mixin default{
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+	box-sizing: border-box;	
 }
+* {
+	@include default;
+}
+$estilos: (
+	width: 22rem,
+	height: 16rem,
+	border-radius: 50%,
+	padding: 1rem,
+);
+.section__div__color--extend{
+	@extend .section__div__color;
+	background-color: white
+	}
 .header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row;
 }
 .header__imgRedonda {
-	width: 22rem;
-	height: 16rem;
-	border-radius: 50%;
-	padding: 1rem;
+	width: map-get($estilos,width);
+	height: map-get($estilos,height);
+	border-radius: map-get($estilos,border-radius);
+	padding: map-get($estilos,padding);
 }
 .header__nav__derecha {
 	text-align: right;
@@ -29,22 +43,13 @@ $pixels: 20px;
 	width: 10rem;
 	font-size: 1.5rem;
 }
-a {
-	color: $colorancla;
-	&:hover {
-		color: white;
-	}
-	&:active {
-		color: orange;
-	}
-}
 main {
-	background-color: black;
+	@include color;
 }
 .section__div__color {
 	font-size: 1.5rem;
 	font-family: cursive;
-	color: red;
+	color: white;
 }
 .section__imgcentrales {
 	display: grid;
@@ -56,6 +61,7 @@ main {
 	height: 30rem;
 	font-size: 1rem;
 }
+
 @media (max-width: 768px) {
 	html {
 		font-size: 14px;

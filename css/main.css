@@ -46,7 +46,7 @@ main {
 .section__div__color {
   font-size: 1.5rem;
   font-family: cursive;
-  color: red; }
+  color: white; }
 
 .section__imgcentrales {
   display: grid;
@@ -58,7 +58,7 @@ main {
   height: 30rem;
   font-size: 1rem; }
 
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
   html {
     font-size: 14px; } }
 
